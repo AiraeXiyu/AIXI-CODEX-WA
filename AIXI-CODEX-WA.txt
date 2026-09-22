@@ -1,0 +1,2 @@
+AIXI CODEX WA
+GitHub → Vercel pairing portal + supplied Baileys bot source.

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>AIXI CODEX WA</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">AIXI CODEX • WHATSAPP AUTOMATION</span>
+        <h1>AIXI<br><em>CODEX WA</em></h1>
+        <p>Pair your WhatsApp account, keep the authentication session in secure Redis storage, and reconnect the bot when the server runtime restarts.</p>
+        <div class="status"><span id="dot"></span><span id="statusText">Checking runtime...</span></div>
+      </div>
+      <div class="character-wrap"><img src="/character.jpg" alt="AIXI CODEX character"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div><span class="mini">01</span><h2>Connect WhatsApp</h2></div>
+        <span class="tag">PAIRING</span>
+      </div>
+      <label for="phone">WhatsApp number</label>
+      <div class="input-row">
+        <input id="phone" inputmode="numeric" autocomplete="tel" placeholder="628123456789" maxlength="15">
+        <button id="pair">GET PAIRING CODE</button>
+      </div>
+      <div id="codeBox" class="code-box hidden">
+        <span>PAIRING CODE</span>
+        <strong id="code">----</strong>
+        <button id="copy">COPY</button>
+      </div>
+      <p class="hint">Gunakan format internasional tanpa <b>+</b>. Contoh: <b>628123456789</b></p>
+    </section>
+
+    <section class="panel compact">
+      <div class="panel-head">
+        <div><span class="mini">02</span><h2>Session</h2></div>
+        <span id="sessionState" class="tag">IDLE</span>
+      </div>
+      <p class="muted">Session yang sudah tersimpan dapat dipulihkan tanpa memasukkan pairing code lagi.</p>
+      <div class="actions">
+        <button id="reconnect" class="secondary">↻ RECONNECT SESSION</button>
+        <button id="refresh" class="ghost">REFRESH STATUS</button>
+      </div>
+    </section>
+
+    <footer>
+      <span>✦ AIXI CODEX WA</span>
+      <small>Dark / Wine / Plum</small>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
